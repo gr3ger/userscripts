@@ -6,8 +6,8 @@
 // @version     1.0
 // @author      Greger
 // @homepageURL  https://github.com/gr3ger/userscripts
-// @updateURL    https://raw.githubusercontent.com/gr3ger/userscripts/main/twitch_scroll_fix.js
-// @downloadURL  https://raw.githubusercontent.com/gr3ger/userscripts/main/twitch_scroll_fix.js
+// @updateURL    https://raw.githubusercontent.com/gr3ger/userscripts/main/twitch_scroll_fix.user.js
+// @downloadURL  https://raw.githubusercontent.com/gr3ger/userscripts/main/twitch_scroll_fix.user.js
 // @description 2025-10-06, 20:52:52
 // ==/UserScript==
 
