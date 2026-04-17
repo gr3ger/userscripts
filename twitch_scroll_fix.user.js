@@ -3,22 +3,21 @@
 // @namespace   https://github.com/gr3ger/
 // @match       *://*.twitch.tv/*
 // @grant       none
-// @version     1.0.2
+// @version     1.0.3
 // @author      Greger
 // @homepageURL  https://github.com/gr3ger/userscripts
 // @updateURL    https://raw.githubusercontent.com/gr3ger/userscripts/main/twitch_scroll_fix.user.js
 // @downloadURL  https://raw.githubusercontent.com/gr3ger/userscripts/main/twitch_scroll_fix.user.js
 // @description 2025-10-06, 20:52:52
+// @run-at      document-start
 // ==/UserScript==
 
 const originalAddEventListener = EventTarget.prototype.addEventListener;
 
-
 EventTarget.prototype.addEventListener = function(type, listener, options) {
     if (type == 'scroll' && this?.className?.includes('scrollable-area') == true)
     {
-        if (this?.firstChild?.className?.includes('chat-scrollable-area__message-container') == true
-            || this?.firstChild?.className?.includes('area__message-container') == true)
+        if (this?.firstChild?.className?.includes('area__message-container') == true)
         {
             var stack = new Error().stack;
             if (stack?.includes('assets.twitch.tv') == true)
